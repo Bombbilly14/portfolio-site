@@ -2,17 +2,15 @@ import * as React from 'react';
 import { navData } from "./navData.js";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-
 import Slide from '@mui/material/Slide';
 import { Button } from '@mui/material';
+
+
 function HideOnScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
@@ -34,10 +32,10 @@ export default function HideAppBar(props) {
   }
   return (
     <React.Fragment>
-      <CssBaseline />
+      <CssBaseline/>
       <HideOnScroll {...props}>
         <AppBar sx={{backgroundColor: '#1B0844', opacity: 0.8}}>
-        <Toolbar>
+        <Toolbar sx={{justifyContent: 'right', marginRight: 30}}>
         {navData.map((navItem) => (
           <Button
           key={navItem.id}
@@ -50,7 +48,7 @@ export default function HideAppBar(props) {
       </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
+      <Toolbar  />
     </React.Fragment>
   );
 }

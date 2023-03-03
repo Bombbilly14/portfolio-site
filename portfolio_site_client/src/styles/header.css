@@ -1,7 +1,9 @@
 .header-div {
     margin: 10px;
-    border: 1px solid;
-    text-align: left;
+    /* border: 1px solid; */
+    text-align: center;
+    justify-content:center
+    
     
 }
 .header-div h1 {
