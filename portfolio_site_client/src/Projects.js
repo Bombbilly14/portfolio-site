@@ -13,7 +13,12 @@ function Projects() {
           <p>here...here...here...here...here...here...</p>
         </div>
         <div>
-          <img src="Foodi.png" alt="Project 1" className="project-image" />
+        <a href="https://github.com/Bombbilly14/dating-app" target="_blank" rel="noopener noreferrer">
+          <div className="project-image-container">
+            <img src="Foodi.png" alt="Project 1" className="project-image" />
+            <div className="project-image-overlay">Github Link</div>
+          </div>
+        </a>
         </div>
       </div>
       <div className="projects-container">
@@ -22,7 +27,12 @@ function Projects() {
           <p>Description of the project goes here...</p>
         </div>
         <div>
-          <img src="Foodi.png" alt="Project 2" className="project-image"/>
+        <a href="https://github.com/JonnyNice/recipeapp" target="_blank" rel="noopener noreferrer">
+          <div className="project-image-container">
+            <img src="Foodi.png" alt="Project 1" className="project-image" />
+            <div className="project-image-overlay">Github Link</div>
+          </div>
+        </a>
         </div>
       </div>
       <div className="projects-container">
@@ -31,7 +41,12 @@ function Projects() {
           <p>Description of the project goes here...</p>
         </div>
         <div>
+        <a href="https://github.com/Bombbilly14/social-media-app" target="_blank" rel="noopener noreferrer">
+          <div className="project-image-container">
           <img src="theloop.png" alt="Project 3" className="project-image" />
+          <div className="project-image-overlay">Github Link</div>
+          </div>
+        </a>
         </div>
       </div>
     </div>
