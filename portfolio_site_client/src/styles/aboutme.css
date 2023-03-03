@@ -5,10 +5,23 @@
     justify-content: space-between;
     margin-bottom: 2rem;
     margin: 10px;
+    margin-top: 15rem;
     /* border: 2px solid; */
     border-radius: 5px;
     padding: 1rem;
     
+  }
+
+  .content {
+    opacity: 0;
+    transition: opacity 2.0s ease;
+  }
+  
+  .content.show {
+    opacity: 1;
+  }
+  .content.hide {
+    opacity: 0;
   }
   
   .about-image {

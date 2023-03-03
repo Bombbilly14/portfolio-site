@@ -8,6 +8,8 @@ function Header() {
         <h1>William German</h1>
         <h2>A Fullstack software engineer</h2>
         <ContactForm buttonText='Email Me!'/>
+        
+        <hr style={{ width: '50rem', marginTop: 50}}/>
     </div>
   )
 }
