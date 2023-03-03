@@ -4,7 +4,7 @@ import './styles/aboutme.css'
 
 function AboutMe() {
   return (
-    <div className='about-div'>
+    <div className='about-div' id='about'>
       {/* <p>About me.</p> */}
        {/* <br/> */}
       <p>
