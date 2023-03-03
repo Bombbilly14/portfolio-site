@@ -48,21 +48,21 @@ function Contact() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 400,
-        bgcolor: '#081344',
+        bgcolor: 'white',
         boxShadow: 24,
+        borderRadius: 4,
         color: 'grey',
         p: 4,
       }}
     >
-      <Box sx={{ display: 'flex', justifyContent: 'flex-end', color:'white' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
         <IconButton  sx={{ color: 'grey' }} onClick={handleClose}>
           <CloseIcon />
         </IconButton>
       </Box>
-      <h2 id="modal-title">Email me</h2>
+      <h2 id="modal-title">Contact Form</h2>
       <form onSubmit={sendEmail}>
           <TextField
-            sx={{ color: 'grey' }}
             id="from_name"
             name="from_name"
             label="Name"
@@ -70,6 +70,7 @@ function Contact() {
             margin="normal"
             fullWidth
             required
+            // inputProps={{ style: { color: '#f1efef' } }}
           />
           <TextField
             id="reply_to"
@@ -80,6 +81,7 @@ function Contact() {
             margin="normal"
             fullWidth
             required
+            // inputProps={{ style: { color: '#f1efef' } }}
           />
           <TextField
             sx={{ color: 'grey' }}
@@ -92,6 +94,7 @@ function Contact() {
             multiline
             required
             rows={4}
+            // inputProps={{ style: { color: '#f1efef' } }}
           />
           <Button type="submit" variant="contained" color="primary">
             Send
@@ -110,6 +113,7 @@ function Contact() {
         Email me
       </Button>
       <Modal
+      sx={{color: 'white'}}
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-title"
