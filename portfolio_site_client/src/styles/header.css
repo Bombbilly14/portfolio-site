@@ -2,4 +2,8 @@
     margin: 10px;
     border: 1px solid;
     text-align: left;
+    
+}
+.header-div h1 {
+ font-size: 5rem;
 }
