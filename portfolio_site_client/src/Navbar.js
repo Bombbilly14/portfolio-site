@@ -1,14 +1,13 @@
 import * as React from 'react';
-
+import { navData } from "./navData.js";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-// import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Slide from '@mui/material/Slide';
 
+import Slide from '@mui/material/Slide';
+import { Button } from '@mui/material';
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -28,31 +27,30 @@ function HideOnScroll(props) {
 
 
 export default function HideAppBar(props) {
+  const handleNavClick = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6" component="div">
-              Scroll to hide App bar
-            </Typography>
-          </Toolbar>
+        <AppBar sx={{backgroundColor: '#1B0844', opacity: 0.8}}>
+        <Toolbar>
+        {navData.map((navItem) => (
+          <Button
+          key={navItem.id}
+          onClick={(event) => handleNavClick(event, navItem.link.slice(1))}
+          color="inherit"
+        >
+          {navItem.text}
+        </Button>
+        ))}
+      </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <Container>
-        {/* <Box sx={{ my: 2 }}>
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box> */}
-      </Container>
     </React.Fragment>
   );
 }
