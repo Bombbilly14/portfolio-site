@@ -2,22 +2,22 @@ export const navData = [
 
     {
         id:1,
-        text: <span>About Me</span>,
+        text: <span>1.About Me</span>,
         link: '#about'
     },
     {
         id:2,
-        text: <span>Projects</span>,
+        text: <span>2.Projects</span>,
         link: '#projects'
     },
     {
         id:3,
-        text: <span>Experience</span>,
+        text: <span>3.Experience</span>,
         link: '#experience'
     },
     {
         id:4,
-        text: <span>Contact</span>,
+        text: <span>4.Contact</span>,
         link: '#contact'
     },
 ]
