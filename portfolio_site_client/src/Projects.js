@@ -5,12 +5,12 @@ function Projects() {
   return (
     <div id='projects' className='projects-div'>
       
-      <h2>Here are some of the projects I have worked on</h2>
+      <h2>Recent Work I've Done</h2>
       <div className="projects-container">
         <div className="project-description">
           <h3>Project 1: Dates With Ruby</h3>
-          <p>Description of the project goes here...here...here...here...here...here...here...here...here...here...</p>
-          <p>here...here...here...here...here...here...</p>
+          <p>Dating app made with Rails and React. Active Storage used for image uploading, including MiniMagick for image editing, Action Cable for live chat, and full user authentication with BCrypt. Semantic UI And MUI libraries used for design. Users can create and edit their profile, match with other users, and message them via Action Cable  </p>
+          
         </div>
         <div>
         <a href="https://github.com/Bombbilly14/dating-app" target="_blank" rel="noopener noreferrer">

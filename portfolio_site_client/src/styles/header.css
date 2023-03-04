@@ -7,3 +7,22 @@
 .header-div h1 {
  font-size: 5rem;
 }
+
+.name-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #DAF7A6;
+    text-shadow: 2px 2px #FF5733; 
+  }
+  
+  .gradient-hr {
+    width: 75rem;
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, #ff0000 0%, #ff7f00 17%, #ffff00 33%, #00ff00 50%, #0000ff 67%, #4b0082 83%, #8b00ff 100%);
+    margin-top: 50px;
+  }
+  .header-p{
+    font-style: italic;
+    font-size: 25px;
+  }

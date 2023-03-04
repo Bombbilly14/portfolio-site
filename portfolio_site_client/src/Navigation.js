@@ -17,16 +17,16 @@ const Navigation = () => {
         onClick={handleShowSocialMediaBar}
         style={{
           borderRadius: '50%',
-          height: '75px',
-          width: '75px',
+          height: '65px',
+          width: '65px',
           backgroundColor: 'transparent',
           boxShadow: 'none',
-          borderColor: '#000',
+          borderColor: 'white',
           borderWidth: '2px',
           borderStyle: 'solid',
-          color: '#000',
+          color: 'white',
           position: 'relative',
-          zIndex: 3,
+          zIndex: 999,
         }}
       >
         <Menu />
