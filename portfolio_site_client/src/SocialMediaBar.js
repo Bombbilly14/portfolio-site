@@ -9,7 +9,7 @@ const SocialMediaBar = () => {
   return (
     <div>
       <IconButton
-        
+        style={{color: '#B2308C'}}
         aria-label="GitHub"
         href="https://github.com/Bombbilly14"
         target="_blank"
@@ -17,7 +17,7 @@ const SocialMediaBar = () => {
         <GitHubIcon />
       </IconButton>
       <IconButton
-        
+        style={{color: '#B2308C'}}
         aria-label="Twitter"
         href="https://twitter.com/"
         target="_blank"
@@ -25,7 +25,7 @@ const SocialMediaBar = () => {
         <Twitter />
       </IconButton>
       <IconButton
-        
+        style={{color: '#B2308C'}}
         aria-label="LinkedIn"
         href="https://www.linkedin.com/in/williamgermansoftware/"
         target="_blank"
