@@ -1,8 +1,8 @@
 import React from 'react';
 import { IconButton } from '@mui/material';
-import {  Twitter, LinkedIn } from '@mui/icons-material';
+import { LinkedIn } from '@mui/icons-material';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import JoinLeftIcon from '@mui/icons-material/JoinLeft';
 
 const SocialMediaBar = () => {
 
@@ -18,17 +18,18 @@ const SocialMediaBar = () => {
       </IconButton>
       <IconButton
         style={{color: '#B2308C'}}
-        aria-label="Twitter"
-        href="https://twitter.com/"
+        aria-label="Medium"
+        href="https://medium.com/@william.j.german2"
         target="_blank"
       >
-        <Twitter />
+        <JoinLeftIcon />
       </IconButton>
       <IconButton
         style={{color: '#B2308C'}}
         aria-label="LinkedIn"
         href="https://www.linkedin.com/in/williamgermansoftware/"
         target="_blank"
+        alt="Medium Blogs"
       >
         <LinkedIn />
       </IconButton>
