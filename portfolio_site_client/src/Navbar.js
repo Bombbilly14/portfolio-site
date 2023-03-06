@@ -35,7 +35,7 @@ export default function HideAppBar(props) {
       <CssBaseline/>
       <HideOnScroll {...props}>
         <AppBar sx={{backgroundColor: '#1B0844', opacity: 0.8}}>
-        <Toolbar sx={{justifyContent: 'right', marginRight: 15}}>
+        <Toolbar sx={{justifyContent: 'right'}}>
         {navData.map((navItem) => (
           <Button
           key={navItem.id}

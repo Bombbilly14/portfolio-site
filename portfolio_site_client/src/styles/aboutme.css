@@ -34,6 +34,8 @@
   .about-div p {
     flex-basis: 15%;
     margin-left: 25rem;
+    flex-basis: 40%;
+    margin-right: 10px
   }
   
   @media screen and (max-width: 768px) {

@@ -7,7 +7,7 @@ import JoinLeftIcon from '@mui/icons-material/JoinLeft';
 const SocialMediaBar = () => {
 
   return (
-    <div>
+    <div className="social-bar">
       <IconButton
         style={{color: '#B2308C'}}
         aria-label="GitHub"
