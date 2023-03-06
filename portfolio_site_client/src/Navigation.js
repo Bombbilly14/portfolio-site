@@ -11,7 +11,7 @@ const Navigation = () => {
   };
 
   return (
-    <div style={{ position: 'fixed', left: 0, top: '50%' }}>
+    <div style={{ position: 'fixed', left: 0, top: '50%', zIndex: 999}}>
       <IconButton
         aria-label="Social Media"
         onClick={handleShowSocialMediaBar}
