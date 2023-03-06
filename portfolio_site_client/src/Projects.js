@@ -15,7 +15,7 @@ function Projects() {
         <div>
         <a href="https://github.com/Bombbilly14/dating-app" target="_blank" rel="noopener noreferrer">
           <div className="project-image-container">
-            <img src="Foodi.png" alt="Project 1" className="project-image" />
+            <img src="dateswithruby.png" alt="Project 1" className="project-image" />
             <div className="project-image-overlay">Github Link</div>
           </div>
         </a>
@@ -24,7 +24,7 @@ function Projects() {
       <div className="projects-container">
         <div className="project-description">
           <h3>Project 2: Foodi</h3>
-          <p>Description of the project goes here...</p>
+          <p>Recipe sharing app made with Ruby and React. Built with Sinatra and Active Record, users can manage their dashboard, create recipes, and create/edit comments. </p>
         </div>
         <div>
         <a href="https://github.com/JonnyNice/recipeapp" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ function Projects() {
       <div className="projects-container">
         <div className="project-description">
           <h3>Project 3: The Loop</h3>
-          <p>Description of the project goes here...</p>
+          <p>Simple Social Media app using React and Rails. The Loop has a "Vent" feature similar to a tweet. Users will find current posts at the top of their page and with both users and post having full CRUD. </p>
         </div>
         <div>
         <a href="https://github.com/Bombbilly14/social-media-app" target="_blank" rel="noopener noreferrer">
