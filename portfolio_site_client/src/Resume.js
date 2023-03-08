@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 function Resume() {
   return (
-    <div>
+    <div >
       <a href="/resume/myresume.pdf" download>
         <Button variant="outlined">
         My resume
