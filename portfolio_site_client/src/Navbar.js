@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { Button } from '@mui/material';
+import './styles/navbar.css'
 
 
 function HideOnScroll(props) {
@@ -41,6 +42,7 @@ export default function HideAppBar(props) {
           key={navItem.id}
           onClick={(event) => handleNavClick(event, navItem.link.slice(1))}
           color="inherit"
+          className="nav-button" 
         >
           {navItem.text}
         </Button>
