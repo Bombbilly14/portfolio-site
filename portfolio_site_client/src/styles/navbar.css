@@ -1,6 +1,12 @@
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  .nav-button {
+    font-size: 0.75rem !important
+  }
+}
+
+@media screen and (max-width: 420px) {
     .nav-button {
-      font-size: 0.75rem; 
+      font-size: 0.6rem !important
     }
   }

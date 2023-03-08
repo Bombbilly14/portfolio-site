@@ -4,12 +4,12 @@ import './styles/experience.css';
 
 function Experience() {
   return (
-    <div className="experience-card" id='experience'>
+    <div className="experience-card" >
       <div className="experience-text">
         <h2>Experience</h2>
         <p>To see my most recent work experience and projects, please download my resume below</p>
       </div>
-      <div className="experience-resume">
+      <div className="experience-resume"  id='experience'>
         <Resume />
       </div>
     </div>
