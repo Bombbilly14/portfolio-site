@@ -35,8 +35,9 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline/>
       <HideOnScroll {...props}>
-        <AppBar sx={{backgroundColor: '#1B0844', opacity: 0.8}}>
-        <Toolbar sx={{justifyContent: 'right'}}>
+      <AppBar sx={{backgroundColor: 'rgba(27, 8, 68, 0.3)', color: '#fff'}}> 
+
+        <Toolbar sx={{justifyContent: 'center'}}>
         {navData.map((navItem) => (
           <Button
           key={navItem.id}

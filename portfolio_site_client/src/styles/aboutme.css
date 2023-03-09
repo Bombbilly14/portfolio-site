@@ -1,66 +1,86 @@
 .about-div {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto; /* Center the container horizontally */
-  max-width: 1200px; 
-  margin-top: 15rem;
-  border-radius: 5px;
-  padding: 1rem;
-    
-  }
+  margin: 0 auto;
+  max-width: 900px;
+  margin-top: 6rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  text-align: center;
+}
 
-  .content {
-    opacity: 0;
-    transition: opacity 1.9s ease;
-  }
-  
-  .content.show {
-    opacity: 1;
-  }
-  .content.hide {
-    opacity: 0;
-  }
-  
-  .about-image {
-  flex: 1;
-  max-width: 50%;
-  max-height: 50%;
-  margin-left: 10rem;
+.content {
+  opacity: 0;
+  transition: opacity 1.9s ease;
+}
+
+.content.show {
+  opacity: 1;
+}
+
+.content.hide {
+  opacity: 0;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
-  }
-  
-  .about-div p {
-   
-  
-    flex-basis: 43%;
-    margin-right: 10px
-  }
-  
-  @media screen and (max-width: 768px) {
-    .about-div {
-      flex-direction: column;
+  margin-top: 2rem;
+}
 
-    }
-  
-    .about-image {
-      max-width: 50%;
-      max-height: 50%;
-      margin: 1rem 0;
-    }
-  
-    .about-div p {
-      margin-left: 0;
-    }
-    
-    @media screen and (max-width: 300px) {
-    .about-div {
-      align-items: center;
-      /* flex-basis: 12%; */
-    }
-  
-    .about-div p {
-      margin-top: 1rem;
-    }
+.about-div p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: #666;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .about-div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    margin-top: 10rem;
+    text-align: left;
   }
+
+  .about-image {
+    width: 250px;
+    height: 250px;
+    margin-top: 0;
+    margin-left: 2rem;
   }
+
+  .about-div p {
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .about-image {
+    margin-top: 1rem;
+  }
+
+  .about-div p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
