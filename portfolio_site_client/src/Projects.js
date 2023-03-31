@@ -18,7 +18,7 @@ function Projects() {
       <div id='projects' className="projects-container">
         <div className="project-description">
           <h3>Friends App | <a href='https://www.youtube.com/watch?v=D1NIfQzdMCA' target="_blank" rel="noopener noreferrer">Demo</a> </h3>
-          <p>Classic messaging app. Created with React Native, Node.js with Express.js framework, MongoDB, and Socket.io for private messaging. Users can find friends by searching via name or email and send them a friend request. Once connected, users are able to messaging each other with a modern UI design. Image uploads via Cloudinary</p>
+          <p>Classic messaging app. Created with React Native, Node.js with Express.js framework, MongoDB, and Socket.io for private messaging. Users can find friends by searching via name or email and send them a friend request. Once connected, users are able to message each other with a modern UI design. Image uploads via Cloudinary</p>
           
         </div>
         <div>
