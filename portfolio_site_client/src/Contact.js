@@ -1,16 +1,18 @@
 import React from 'react';
 import ContactForm from './ContactForm'
-import './styles/contact.css'
+import './styles/experience.css'
 
 function Contact() {
 
   return (
-    <div className="contact-div">
-      <h2>Like my work? Contact me!</h2>
+    <div className="experience-card">
+      <h2 className="experience-text">Like my work? Contact me!</h2>
       <p id="contact">
         I'm currently looking for work and opportunities in frontend, backend, and full stack software engineering and web development
       </p>
+      <div className="experience-resume">
       <ContactForm buttonText="Email Me" />
+      </div>
     </div>
   );
 }
