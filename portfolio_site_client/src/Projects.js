@@ -32,7 +32,7 @@ function Projects() {
       </div>
       <div id='projects' className="projects-container">
         <div className="project-description">
-          <h3>Dates With Ruby</h3>
+          <h3>Dates By Ruby  | <a href='https://youtu.be/Yi1EknwPZwg' target="_blank" rel="noopener noreferrer">Demo</a> </h3>
           <p>Dating app made with Rails and React. Active Storage used for image uploading, including MiniMagick for image editing, Action Cable for live chat, and full user authentication with BCrypt. Semantic UI And MUI libraries used for design. Users can create and edit their profile, match with other users, and message them via Action Cable  </p>
           
         </div>
